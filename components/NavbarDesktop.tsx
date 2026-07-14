@@ -24,7 +24,7 @@ export function NavbarDesktop() {
     <header className="sticky top-0 z-50 w-full border-muted-foreground/20 border-b bg-background backdrop-blur-xl">
       <nav className="mx-auto flex h-20 container items-center justify-between px-3">
         <Link href="/" className="flex items-center gap-3">
-          <div className="flex size-11 items-center justify-center rounded-2xl bg-chart-2 text-slate-950 shadow-lg shadow-cyan-400/20">
+          <div className="flex size-11 items-center justify-center rounded-2xl bg-chart-2 text-slate-950 shadow-lg shadow-sidebar-primary/20">
            <Image src={BabelCall} height={44} alt="Logo" className="px-1"/>
           </div>
 
