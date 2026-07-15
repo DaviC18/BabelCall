@@ -1,5 +1,5 @@
 import { GitForkIcon } from "@phosphor-icons/react";
-import { Bot, BriefcaseBusiness, Clock3, DollarSign, FileText, Gauge, Globe2, Home, Languages, Link2, Mail, MessageSquareText, Mic2, Plus, ShieldCheck, Users2 } from "lucide-react";
+import { Bot, BriefcaseBusiness, Clock3, DollarSign, FileText, Gauge, Globe2, Home, Languages, Link2, LockKeyhole, Mail, MessageSquareText, Mic2, PhoneCall, Plus, ShieldCheck, Users2, WandSparkles, Zap } from "lucide-react";
 
 const navLinks = [
   {
@@ -252,4 +252,103 @@ const differences = [
   },
 ];
 
-export {navLinks, navLinksMobile, steps, features, useCases, productLinks, companyLinks, socialLinks, mainSteps, techFlow, mvpItems, futureItems, differences}
+const mainFeatures = [
+  {
+    icon: Mic2,
+    title: "Captura de voz",
+    description:
+      "O usuário fala naturalmente pelo microfone, sem precisar digitar cada frase.",
+  },
+  {
+    icon: FileText,
+    title: "Transcrição automática",
+    description:
+      "A fala é transformada em texto para servir como base da tradução.",
+  },
+  {
+    icon: Languages,
+    title: "Tradução por IA",
+    description:
+      "O texto transcrito é traduzido para o idioma escolhido pelo participante.",
+  },
+  {
+    icon: MessageSquareText,
+    title: "Legenda em tempo real",
+    description:
+      "A tradução aparece na interface como legenda para manter a conversa fluindo.",
+  },
+  {
+    icon: Users2,
+    title: "Salas compartilháveis",
+    description:
+      "Cada conversa acontece dentro de uma sala acessada por link único.",
+  },
+  {
+    icon: Clock3,
+    title: "Histórico da conversa",
+    description:
+      "As mensagens traduzidas podem ser salvas para consulta, resumo e exportação.",
+  },
+];
+
+const mvpFeatures = [
+  "Criar sala por link",
+  "Entrar em uma sala compartilhada",
+  "Escolher idioma de entrada",
+  "Escolher idioma de saída",
+  "Enviar texto para tradução",
+  "Capturar áudio pelo microfone",
+  "Transcrever fala em texto",
+  "Mostrar legenda traduzida",
+  "Salvar histórico da conversa",
+];
+
+const futureFeatures = [
+  {
+    icon: PhoneCall,
+    title: "Voz traduzida",
+    description:
+      "Gerar áudio traduzido para que a outra pessoa escute a conversa no idioma dela.",
+  },
+  {
+    icon: Bot,
+    title: "Resumo automático",
+    description:
+      "Criar resumos com pontos importantes, decisões e próximos passos da conversa.",
+  },
+  {
+    icon: WandSparkles,
+    title: "Glossário personalizado",
+    description:
+      "Manter termos técnicos, nomes de produtos e expressões do jeito certo para cada área.",
+  },
+  {
+    icon: Globe2,
+    title: "Mais idiomas",
+    description:
+      "Expandir de português, inglês e espanhol para outras línguas conforme validação real.",
+  },
+];
+
+const benefits = [
+  {
+    icon: Zap,
+    title: "Menos atrito",
+    description:
+      "A conversa acontece dentro de uma sala, sem copiar texto de um lado para outro.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Base para SaaS",
+    description:
+      "A estrutura permite evoluir para login, planos, limites, histórico e times.",
+  },
+  {
+    icon: LockKeyhole,
+    title: "Privacidade como prioridade",
+    description:
+      "Conversas, históricos e dados podem ser tratados com regras claras desde o início.",
+  },
+];
+
+export {navLinks, navLinksMobile, steps, features, useCases, productLinks, companyLinks, socialLinks, mainSteps, techFlow, mvpItems, futureItems, differences, mainFeatures, mvpFeatures, futureFeatures, benefits}
