@@ -1,5 +1,5 @@
 import { GitForkIcon } from "@phosphor-icons/react";
-import { Bot, BriefcaseBusiness, Clock3, DollarSign, FileText, Gauge, Globe2, Home, Languages, Link2, LockKeyhole, Mail, MessageSquareText, Mic2, PhoneCall, Plus, ShieldCheck, Users2, WandSparkles, Zap } from "lucide-react";
+import { Bot, BriefcaseBusiness, Building2, Clock3, Crown, DollarSign, FileText, Gauge, Globe2, Home, Languages, Link2, LockKeyhole, Mail, MessageSquareText, Mic2, PhoneCall, Plus, Rocket, ShieldCheck, Users2, WandSparkles, Zap } from "lucide-react";
 
 const navLinks = [
   {
@@ -351,4 +351,156 @@ const benefits = [
   },
 ];
 
-export {navLinks, navLinksMobile, steps, features, useCases, productLinks, companyLinks, socialLinks, mainSteps, techFlow, mvpItems, futureItems, differences, mainFeatures, mvpFeatures, futureFeatures, benefits}
+const plans = [
+  {
+    name: "Free",
+    description: "Para testar a ideia e criar suas primeiras salas.",
+    price: "R$ 0",
+    period: "/mês",
+    icon: Rocket,
+    badge: "Comece aqui",
+    highlighted: false,
+    cta: "Criar sala grátis",
+    href: "/room/create",
+    features: [
+      "30 minutos de conversa por mês",
+      "Tradução por legenda",
+      "Português ↔ Inglês",
+      "Salas compartilháveis por link",
+      "Histórico limitado",
+      "Acesso aos recursos básicos",
+    ],
+  },
+  {
+    name: "Pro",
+    description: "Para freelancers, devs e profissionais falando com clientes.",
+    price: "R$ 39",
+    period: "/mês",
+    icon: Crown,
+    badge: "Mais indicado",
+    highlighted: true,
+    cta: "Começar no Pro",
+    href: "/room/create",
+    features: [
+      "300 minutos de conversa por mês",
+      "Tradução por legenda",
+      "Português ↔ Inglês e Espanhol",
+      "Histórico completo",
+      "Resumo automático da conversa",
+      "Exportação de conversa",
+      "Prioridade em novos recursos",
+    ],
+  },
+  {
+    name: "Business",
+    description: "Para equipes, atendimentos e pequenos negócios internacionais.",
+    price: "Sob consulta",
+    period: "",
+    icon: Building2,
+    badge: "Para empresas",
+    highlighted: false,
+    cta: "Falar com vendas",
+    href: "/contact",
+    features: [
+      "Minutos personalizados",
+      "Múltiplos usuários",
+      "Glossário personalizado",
+      "Histórico por equipe",
+      "Relatórios de uso",
+      "Suporte prioritário",
+      "Recursos de privacidade avançados",
+    ],
+  },
+];
+
+const comparisonRows = [
+  {
+    feature: "Criar salas por link",
+    free: true,
+    pro: true,
+    business: true,
+  },
+  {
+    feature: "Legenda traduzida",
+    free: true,
+    pro: true,
+    business: true,
+  },
+  {
+    feature: "Histórico da conversa",
+    free: "Limitado",
+    pro: true,
+    business: true,
+  },
+  {
+    feature: "Resumo automático",
+    free: false,
+    pro: true,
+    business: true,
+  },
+  {
+    feature: "Exportação de conversa",
+    free: false,
+    pro: true,
+    business: true,
+  },
+  {
+    feature: "Glossário personalizado",
+    free: false,
+    pro: false,
+    business: true,
+  },
+  {
+    feature: "Usuários em equipe",
+    free: false,
+    pro: false,
+    business: true,
+  },
+];
+
+const faqItems = [
+  {
+    question: "O BabelCall já traduz chamadas telefônicas comuns?",
+    answer:
+      "Não no MVP. A primeira versão será focada em salas próprias com tradução por legenda. Chamadas telefônicas reais ficam para uma fase mais avançada.",
+  },
+  {
+    question: "Por que existe limite de minutos?",
+    answer:
+      "Porque transcrição, tradução e IA custam por uso. O limite evita que o produto vire uma fogueira de dinheiro com interface bonita.",
+  },
+  {
+    question: "A voz traduzida entra quando?",
+    answer:
+      "Depois que a legenda em tempo real estiver sólida. Voz traduzida aumenta custo, latência e complexidade, então entra em uma fase posterior.",
+  },
+  {
+    question: "Posso usar para falar com clientes estrangeiros?",
+    answer:
+      "Essa é exatamente uma das ideias principais: ajudar brasileiros a conversar melhor com clientes, parceiros e pessoas de outros países.",
+  },
+];
+
+
+export {
+  navLinks, 
+  navLinksMobile, 
+  steps, 
+  features, 
+  useCases, 
+  productLinks, 
+  companyLinks, 
+  socialLinks, 
+  mainSteps, 
+  techFlow, 
+  mvpItems, 
+  futureItems, 
+  differences, 
+  mainFeatures, 
+  mvpFeatures, 
+  futureFeatures, 
+  benefits,
+  plans,
+  comparisonRows,
+  faqItems
+}
