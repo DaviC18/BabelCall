@@ -1,5 +1,5 @@
 import { GitForkIcon } from "@phosphor-icons/react";
-import { Bot, BriefcaseBusiness, Clock3, DollarSign, Gauge, Home, Languages, Link2, Mail, MessageSquareText, Mic2, Plus, ShieldCheck, Users2 } from "lucide-react";
+import { Bot, BriefcaseBusiness, Clock3, DollarSign, FileText, Gauge, Globe2, Home, Languages, Link2, Mail, MessageSquareText, Mic2, Plus, ShieldCheck, Users2 } from "lucide-react";
 
 const navLinks = [
   {
@@ -159,4 +159,97 @@ const socialLinks = [
   },
 ];
 
-export {navLinks, navLinksMobile, steps, features, useCases, productLinks, companyLinks, socialLinks}
+const mainSteps = [
+  {
+    icon: Link2,
+    title: "1. Crie uma sala",
+    description:
+      "O usuário cria uma sala no BabelCall e recebe um link único para compartilhar.",
+  },
+  {
+    icon: Users2,
+    title: "2. Convide outra pessoa",
+    description:
+      "A outra pessoa entra pelo link, escolhe o idioma que fala e o idioma que quer receber.",
+  },
+  {
+    icon: Mic2,
+    title: "3. Fale naturalmente",
+    description:
+      "Cada participante fala no próprio idioma, sem precisar digitar ou pausar a conversa toda hora.",
+  },
+  {
+    icon: Languages,
+    title: "4. A IA traduz",
+    description:
+      "O sistema transcreve a fala, traduz o texto e mostra a legenda no idioma correto.",
+  },
+];
+
+const techFlow = [
+  {
+    icon: Mic2,
+    title: "Áudio",
+    description: "O navegador captura a fala pelo microfone.",
+  },
+  {
+    icon: FileText,
+    title: "Transcrição",
+    description: "A fala é convertida em texto.",
+  },
+  {
+    icon: Bot,
+    title: "Tradução",
+    description: "A IA traduz o conteúdo para o idioma escolhido.",
+  },
+  {
+    icon: MessageSquareText,
+    title: "Legenda",
+    description: "A outra pessoa recebe a legenda traduzida na sala.",
+  },
+];
+
+const mvpItems = [
+  "Criar sala de conversa",
+  "Compartilhar link da sala",
+  "Escolher idioma de entrada e saída",
+  "Capturar áudio pelo microfone",
+  "Transcrever fala em texto",
+  "Traduzir texto automaticamente",
+  "Exibir legenda traduzida",
+  "Mostrar histórico da conversa",
+];
+
+const futureItems = [
+  "Voz traduzida em tempo real",
+  "App mobile",
+  "App desktop/PWA",
+  "Resumo automático da conversa",
+  "Glossário personalizado por área",
+  "Integração com reuniões online",
+  "Controle de minutos por plano",
+  "Suporte para mais idiomas",
+];
+
+const differences = [
+  {
+    icon: Clock3,
+    title: "Menos atraso",
+    description:
+      "O objetivo é reduzir a distância entre falar e entender, mantendo a conversa viva.",
+  },
+  {
+    icon: Globe2,
+    title: "Foco global",
+    description:
+      "A proposta é conectar pessoas de idiomas diferentes sem transformar a conversa em tradução manual.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Mais controle",
+    description:
+      "Salas, histórico, permissões e privacidade podem evoluir como base de um SaaS real.",
+  },
+];
+
+export {navLinks, navLinksMobile, steps, features, useCases, productLinks, companyLinks, socialLinks, mainSteps, techFlow, mvpItems, futureItems, differences}
