@@ -33,7 +33,7 @@ const navLinksMobile = [
   },
   {
     id: "create",
-    href: "/room/create",
+    href: "/rooms/create",
     icon: Plus
   },
   {
@@ -118,7 +118,7 @@ const productLinks = [
   },
   {
     label: "Criar sala",
-    href: "/room/create",
+    href: "/rooms/create",
   },
 ];
 
@@ -361,7 +361,7 @@ const plans = [
     badge: "Comece aqui",
     highlighted: false,
     cta: "Criar sala grátis",
-    href: "/room/create",
+    href: "/rooms/create",
     features: [
       "30 minutos de conversa por mês",
       "Tradução por legenda",
@@ -380,7 +380,7 @@ const plans = [
     badge: "Mais indicado",
     highlighted: true,
     cta: "Começar no Pro",
-    href: "/room/create",
+    href: "/rooms/create",
     features: [
       "300 minutos de conversa por mês",
       "Tradução por legenda",
@@ -481,6 +481,36 @@ const faqItems = [
   },
 ];
 
+const languages = [
+  {
+    label: "Português",
+    value: "pt-BR",
+  },
+  {
+    label: "Inglês",
+    value: "en-US",
+  },
+  {
+    label: "Espanhol",
+    value: "es-ES",
+  },
+  {
+    label: "Francês",
+    value: "fr-FR",
+  },
+  {
+    label: "Alemão",
+    value: "de-DE",
+  },
+];
+
+const benefitsRoom = [
+  "Sala criada por link único",
+  "Idiomas definidos antes da conversa",
+  "Base pronta para legenda traduzida",
+  "Fluxo preparado para áudio e transcrição",
+];
+
 
 export {
   navLinks, 
@@ -502,5 +532,7 @@ export {
   benefits,
   plans,
   comparisonRows,
-  faqItems
+  faqItems,
+  languages,
+  benefitsRoom
 }
