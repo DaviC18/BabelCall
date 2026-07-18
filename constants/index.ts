@@ -57,7 +57,7 @@ const navLinksMobile = [
   },
   {
     id: "create",
-    href: "/room/create",
+    href: "/rooms/create",
     icon: Plus,
   },
   {
@@ -142,7 +142,7 @@ const productLinks = [
   },
   {
     label: "Criar sala",
-    href: "/room/create",
+    href: "/rooms/create",
   },
 ];
 
@@ -385,7 +385,7 @@ const plans = [
     badge: "Comece aqui",
     highlighted: false,
     cta: "Criar sala grátis",
-    href: "/room/create",
+    href: "/rooms/create",
     features: [
       "30 minutos de conversa por mês",
       "Tradução por legenda",
@@ -404,7 +404,7 @@ const plans = [
     badge: "Mais indicado",
     highlighted: true,
     cta: "Começar no Pro",
-    href: "/room/create",
+    href: "/rooms/create",
     features: [
       "300 minutos de conversa por mês",
       "Tradução por legenda",
