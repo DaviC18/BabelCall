@@ -7,7 +7,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ModeToggle } from "./ModeToggle";
 import Image from "next/image";
-import BabelCall from "../public/babellogo-1.png"
+import BabelCall from "../public/babellogo-1.png";
 
 export function NavbarDesktop() {
   const pathname = usePathname();
@@ -25,7 +25,7 @@ export function NavbarDesktop() {
       <nav className="mx-auto flex h-20 container items-center justify-between px-3">
         <Link href="/" className="flex items-center gap-3">
           <div className="flex size-11 items-center justify-center rounded-2xl bg-chart-2 text-slate-950 shadow-lg shadow-sidebar-primary/20">
-           <Image src={BabelCall} height={44} alt="Logo" className="px-1"/>
+            <Image src={BabelCall} height={44} alt="Logo" className="px-1" />
           </div>
 
           <div className="flex flex-col">
@@ -64,7 +64,7 @@ export function NavbarDesktop() {
           </div>
           <div className="hidden items-center gap-3 md:flex">
             <Link
-              href="/room/create"
+              href="/rooms/create"
               className="inline-flex items-center gap-2 rounded-full bg-chart-2 px-5 py-2.5 text-sm font-semibold text-slate-800 transition hover:bg-chart-1"
             >
               <PhoneCall size={17} />
