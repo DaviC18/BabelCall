@@ -1,5 +1,29 @@
 import { GitForkIcon } from "@phosphor-icons/react";
-import { Bot, BriefcaseBusiness, Building2, Clock3, Crown, DollarSign, FileText, Gauge, Globe2, Home, Languages, Link2, LockKeyhole, Mail, MessageSquareText, Mic2, PhoneCall, Plus, Rocket, ShieldCheck, Users2, WandSparkles, Zap } from "lucide-react";
+import {
+  Bot,
+  BriefcaseBusiness,
+  Building2,
+  Clock3,
+  Crown,
+  DollarSign,
+  FileText,
+  Gauge,
+  Globe2,
+  Home,
+  Languages,
+  Link2,
+  LockKeyhole,
+  Mail,
+  MessageSquareText,
+  Mic2,
+  PhoneCall,
+  Plus,
+  Rocket,
+  ShieldCheck,
+  Users2,
+  WandSparkles,
+  Zap,
+} from "lucide-react";
 
 const navLinks = [
   {
@@ -29,22 +53,22 @@ const navLinksMobile = [
   {
     id: "how_work",
     href: "/how-it-works",
-    icon: BriefcaseBusiness 
+    icon: BriefcaseBusiness,
   },
   {
     id: "create",
-    href: "/rooms/create",
-    icon: Plus
+    href: "/room/create",
+    icon: Plus,
   },
   {
     id: "resources",
     href: "/features",
-    icon: Gauge
+    icon: Gauge,
   },
   {
     id: "prices",
     href: "/pricing",
-    icon: DollarSign
+    icon: DollarSign,
   },
 ];
 
@@ -118,7 +142,7 @@ const productLinks = [
   },
   {
     label: "Criar sala",
-    href: "/rooms/create",
+    href: "/room/create",
   },
 ];
 
@@ -361,7 +385,7 @@ const plans = [
     badge: "Comece aqui",
     highlighted: false,
     cta: "Criar sala grátis",
-    href: "/rooms/create",
+    href: "/room/create",
     features: [
       "30 minutos de conversa por mês",
       "Tradução por legenda",
@@ -380,7 +404,7 @@ const plans = [
     badge: "Mais indicado",
     highlighted: true,
     cta: "Começar no Pro",
-    href: "/rooms/create",
+    href: "/room/create",
     features: [
       "300 minutos de conversa por mês",
       "Tradução por legenda",
@@ -393,7 +417,8 @@ const plans = [
   },
   {
     name: "Business",
-    description: "Para equipes, atendimentos e pequenos negócios internacionais.",
+    description:
+      "Para equipes, atendimentos e pequenos negócios internacionais.",
     price: "Sob consulta",
     period: "",
     icon: Building2,
@@ -511,28 +536,27 @@ const benefitsRoom = [
   "Fluxo preparado para áudio e transcrição",
 ];
 
-
 export {
-  navLinks, 
-  navLinksMobile, 
-  steps, 
-  features, 
-  useCases, 
-  productLinks, 
-  companyLinks, 
-  socialLinks, 
-  mainSteps, 
-  techFlow, 
-  mvpItems, 
-  futureItems, 
-  differences, 
-  mainFeatures, 
-  mvpFeatures, 
-  futureFeatures, 
+  navLinks,
+  navLinksMobile,
+  steps,
+  features,
+  useCases,
+  productLinks,
+  companyLinks,
+  socialLinks,
+  mainSteps,
+  techFlow,
+  mvpItems,
+  futureItems,
+  differences,
+  mainFeatures,
+  mvpFeatures,
+  futureFeatures,
   benefits,
   plans,
   comparisonRows,
   faqItems,
   languages,
-  benefitsRoom
-}
+  benefitsRoom,
+};
